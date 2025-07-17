@@ -148,6 +148,8 @@ flex > *{
 }
 .reverse{
     flex-direction: row-reverse;
+    justify-content: center;
+    gap: var(--spacing6);
 }
 .padding1{
     padding: var(--spacing1) 0;
@@ -324,7 +326,9 @@ footer{
 
 /*Tablet and Mobile Styles*/
 @media (max-width: 900px){
- 
+    .reverse{
+        gap: var(--spacing4);
+    }
     .logo{
         font: var(--h3);
     }
