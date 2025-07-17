@@ -26,6 +26,7 @@ class TSection extends HTMLElement{
         const boldParagraph = this.getAttribute("boldParagraph");
         const heading = this.getAttribute("heading");
         const paragraph = this.getAttribute("paragraph");
+        const paragraph2 = this.getAttribute("paragraph2");
         const link = this.getAttribute("link");
         const linkText = this.getAttribute("linkText");
         const img = this.getAttribute("img");
@@ -38,6 +39,7 @@ class TSection extends HTMLElement{
             <p class="bold">${boldParagraph}</p>
             <h2>${heading}</h2>
             <p>${paragraph}</p>
+            <p>${paragraph2}</p>
             <button><a href="${link}" class"btn">${linkText}</a></button>
         </div>
         <img src="${img}" class="${imageStyling}" />

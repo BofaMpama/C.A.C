@@ -6,7 +6,7 @@ class TFlexContainer extends HTMLElement{
 
         this.innerHTML =`
         <section class="${selector}">
-        
+            <slot></slot>
         </section>
         `;
     }
@@ -18,13 +18,14 @@ class TBox extends HTMLElement{
     connectedCallback(){
         const selector = this.getAttribute("selector");
         const iconPath = this.getAttribute("icon-path");
+        const iconStyle = this.getAttribute("icon-style");
         const boxDetails = this.getAttribute("box-details");
         const heading = this.getAttribute("heading");
         const paragraph = this.getAttribute("paragraph");
 
         this.innerHTML = `
         <div class="${selector}">
-            <img src="${iconPath}">
+            <img src="${iconPath}" class="iconStyle">
             <div class="${boxDetails}">
                 <h2>${heading}</h2>
                 <p>${paragraph}</p>

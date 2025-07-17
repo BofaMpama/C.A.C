@@ -89,6 +89,12 @@ img{
     width: min(500px, 600px);
     height: fit-content;
 }
+.iconStyle{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: var(--spacing2) 0;
+}
 
 
 /*Utility classes*/
@@ -201,6 +207,15 @@ clip-path: polygon(50% 0%, 60% 15%, 100% 25%, 90% 50%,
 }
 .w-70{
     width: 70%;
+}
+.w-200px{
+    width: 200px;
+}
+.w-300px{
+    width: 300px;
+}
+.w-400px{
+    width: 400px;
 }
 
 
