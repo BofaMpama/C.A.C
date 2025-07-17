@@ -38,7 +38,7 @@ class TSection extends HTMLElement{
             <p class="bold">${boldParagraph}</p>
             <h2>${heading}</h2>
             <p>${paragraph}</p>
-            <button href="${link}" class"btn">${linkText}</button>
+            <button><a href="${link}" class"btn">${linkText}</a></button>
         </div>
         <img src="${img}" class="${imageStyling}" />
         </section>
@@ -68,23 +68,6 @@ class TTextOnlySection extends HTMLElement{
 }
 customElements.define("t-text-only-section", TTextOnlySection);
 
-//Flex Container
-class TFlexContainer extends HTMLElement{
-    connectedCallback(){
-
-        this.innerHTML =`
-        <section class="${selector}">
-        <div class="${box-selector}">
-        <img src="${icon-url}" class="${icon-selector}">
-        <div class="${box-group}">
-        <h1>${heading}</h1>
-        <p>${paragraph}</p>
-        </div>
-        </div>
-        </section>
-        `;
-    }
-}
 
 //Footer
 class TFooter extends HTMLElement{
