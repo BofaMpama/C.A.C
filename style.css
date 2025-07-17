@@ -126,13 +126,20 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing4);
+    flex-wrap: wrap;
+    gap: var(--spacing3);
 }
 .flex2{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing3);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal columns */
+    gap: 2rem;
+    align-items: center;
 }
 .column{
     display: flex;
@@ -142,14 +149,20 @@ section{
 flex > *{
     flex: 1;
     min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .justify-center{
     justify-content: center;
 }
-.reverse{
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: var(--spacing6);
+.reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal columns */
+}
+.reverse > *:first-child {
+    order: 2; /* Move the first child to the second position */
 }
 .padding1{
     padding: var(--spacing1) 0;
@@ -326,6 +339,12 @@ footer{
 
 /*Tablet and Mobile Styles*/
 @media (max-width: 900px){
+    .grid{
+        grid-template-columns: 1fr; /* Single column */
+    }
+    .grid > *:first-child {
+        order: 2; /* Keep the first child in the first position */
+    }
     .reverse{
         gap: var(--spacing4);
     }
