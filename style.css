@@ -95,6 +95,13 @@ img{
     height: 50px;
     object-fit: cover;
     margin: var(--spacing4) 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-self: top;
+    justify-content: top start;
 }
 
 
@@ -120,6 +127,12 @@ section{
     align-items: center;
     justify-content: center;
     gap: var(--spacing4);
+}
+.flex2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing3);
 }
 .column{
     display: flex;
@@ -368,4 +381,9 @@ footer{
         align-items: center;
         text-align: center;
     }
+}
+
+/*Mobile Styles for About Us Page*/
+@media (max-width: 900px){
+   
 }
