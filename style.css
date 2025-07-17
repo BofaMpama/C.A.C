@@ -349,6 +349,10 @@ footer{
     .t-text-only-section{
         max-width: 50%;
     }
+    .mobile-center{
+        align-items: center;
+        text-align: center;
+    }
     .icon-style{
         justify-content: left start;
         background: var(--color2);
