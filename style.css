@@ -406,6 +406,9 @@ footer{
         order: 1; /* Keep the first child in the first position */
         margin: var(--spacing4) 0;
     }
+    .grid2{
+        gap: var(--spacing5);
+    }
     .logo{
         font: var(--h3);
     }
