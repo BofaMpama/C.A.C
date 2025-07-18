@@ -111,7 +111,15 @@ img{
     align-self: top;
     justify-content: top start;
 }
-
+.icon-style-2{
+    height: min(40px, 50px);
+    background: var(--color2);
+    padding: var(--spacing2) var(--spacing4);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*Utility classes*/
 section{
@@ -258,6 +266,20 @@ clip-path: polygon(50% 0%, 60% 15%, 100% 25%, 90% 50%,
 }
 .w-400px{
     width: 400px;
+}
+
+/*size classes*/
+.s-100px{
+    width: 100px;
+    height: 150px;
+}
+.s-200px{
+    width: 200px;
+    height: 250px;
+}
+.s-300px{
+    width: 300px;
+    height: 350px;
 }
 
 
