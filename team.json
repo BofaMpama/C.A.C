@@ -1,0 +1,83 @@
+[
+    {
+    "imageUrl": "https://github.com/BofaMpama/C.A.C/blob/main/resources/team-photos/boff.png", 
+    "name": "Bofa Mpama ", 
+    "role": "Founder", 
+    "facebookUrl": "https://www.facebook.com/bofampama", 
+    "twitterUrl": "https://twitter.com/BofaMpama", 
+    "linkedinUrl": "https://www.linkedin.com/in/bofa-mpama-1b0a2b1b6/", 
+    "githubUrl": "https://www.github.com/BofaMpama"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/tobi.jpeg", 
+    "name": "Tobi Olajuwon ", 
+    "role": "Executive Director", 
+    "facebookUrl": "https://www.facebook.com/tobiolajuwon", 
+    "twitterUrl": "https://twitter.com/tobiolajuwon", 
+    "linkedinUrl": "https://www.linkedin.com/in/tobiolajuwon-13ra24rb6/", 
+    "githubUrl": "https://www.github.com/tobiolajuwon"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/esther.jpeg", 
+    "name": "Esther Bassey ", 
+    "role": "Executive Director", 
+    "facebookUrl": "https://www.facebook.com/estherbassey", 
+    "twitterUrl": "https://twitter.com/estherbassey", 
+    "linkedinUrl": "https://www.linkedin.com/in/estherbassey-13ra24rb6/", 
+    "githubUrl": "https://www.github.com/estherbassey"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/benedicta.jpeg", 
+    "name": "Benedicta Ogunbiyi ", 
+    "role": "Director of Ministry & Discipleship", 
+    "facebookUrl": "https://www.facebook.com/benedictaogunbiyi", 
+    "twitterUrl": "https://twitter.com/benedictaogunbiyi", 
+    "linkedinUrl": "https://www.linkedin.com/in/benedictaogunbiyi-13ra24rb6/", 
+    "githubUrl": "https://www.github.com/benedictaogunbiyi"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/joe.jpeg", 
+    "name": "Joe Emmanuel ", 
+    "role": "CTO (Chief Technology Officer)", 
+    "facebookUrl": "https://www.facebook.com/joe.emmanuel", 
+    "twitterUrl": "https://twitter.com/joeemmanuel", 
+    "linkedinUrl": "https://www.linkedin.com/in/joeemmanuel-14ra24mn6/", 
+    "githubUrl": "https://www.github.com/joeemma"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/joe.jpeg", 
+    "name": "Praise Godfrey", 
+    "role": "Product/Program Manager ", 
+    "facebookUrl": "https://www.facebook.com/praisegodfrey", 
+    "twitterUrl": "https://twitter.com/praisegodfrey", 
+    "linkedinUrl": "https://www.linkedin.com/in/praisegodfrey-33rm61op2/", 
+    "githubUrl": "https://www.github.com/praisegodfrey"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/sam.jpeg", 
+    "name": "Sam Ojo", 
+    "role": "Communications & Media Lead", 
+    "facebookUrl": "https://www.facebook.com/samojo", 
+    "twitterUrl": "https://twitter.com/samojo", 
+    "linkedinUrl": "https://www.linkedin.com/in/samojo-41xx90jp7/", 
+    "githubUrl": "https://www.github.com/samojo"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/mirabel.jpeg", 
+    "name": "Mirabel Kingsley", 
+    "role": "Partnerships & Outreach Coordinator", 
+    "facebookUrl": "https://www.facebook.com/mirabel king", 
+    "twitterUrl": "https://twitter.com/king/mirabel", 
+    "linkedinUrl": "https://www.linkedin.com/in/kingsleymirabel-22py00mt1/", 
+    "githubUrl": "https://www.github.com/mirabelkingsley"
+    },
+    {
+    "imageUrl": "https://github.com/tobiolajuwon/C.A.C/blob/main/resources/team-photos/benaiah.jpeg", 
+    "name": "Benaiah Johnson", 
+    "role": "Fundraising / Development Officer", 
+    "facebookUrl": "https://www.facebook.com/ben.johnson", 
+    "twitterUrl": "https://twitter.com/benjohnson", 
+    "linkedinUrl": "https://www.linkedin.com/in/benjohnson-58lo83pt3/", 
+    "githubUrl": "https://www.github.com/ben.johnson.dev"
+    }
+]
