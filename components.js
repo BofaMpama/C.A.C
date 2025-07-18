@@ -25,7 +25,7 @@ class TBox extends HTMLElement{
 
         this.innerHTML = `
         <div class="${selector}">
-            <img src="${iconPath}" class="iconStyle">
+            <img src="${iconPath}" class="${iconStyle}">
             <div class="${boxDetails}">
                 <h2>${heading}</h2>
                 <p>${paragraph}</p>
