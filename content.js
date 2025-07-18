@@ -107,10 +107,6 @@ class TFooter extends HTMLElement{
                     <img src="resources/icons/icons8-linkedin-64.png"/>
                     <img src="resources/icons/icons8-x-64.png"/>
                 </div>
-                <p>7 ChristTech Lane, Eden's Garden
-                <br>+234 911 288 9402
-                <br>hello@christandcode.com
-                </p>
             </div>
             <div class="copyright-text">
                 <p>&copy; Copyright Christ & Code 2024. All Rights Reserved.

@@ -341,11 +341,16 @@ footer{
 }
 .social-media-icons{
     display: flex;
+    flex:1;
     gap: 20px;
 
     *{
         width: 30px;
     }
+}
+.copyright-text{
+    min-width: fit-content;
+    width: 100%;
 }
 
 /*Tablet and Mobile Styles*/
