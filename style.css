@@ -80,6 +80,7 @@ a:hover{
     border: solid var(--spacing1) var(--color2);
     font: var(--p);
     cursor: pointer;
+    width: fit-content;
 }
 .btn:hover, button:hover{
     background: var(--color1);
@@ -146,12 +147,12 @@ section{
     max-width: 90%;
     flex-direction: column;
 }
-flex > *{
+flex > *, .grid > *{
     flex: 1;
-    min-width: 400px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 .justify-center{
@@ -339,14 +340,15 @@ footer{
 
 /*Tablet and Mobile Styles*/
 @media (max-width: 900px){
-    .grid{
-        grid-template-columns: 1fr; /* Single column */
-    }
-    .grid > *:first-child {
-        order: 2; /* Keep the first child in the first position */
-    }
-    .reverse{
+    .grid, .reverse{
+        display: block;
+        grid-template-columns: 1fr; /* Single column layout */
         gap: var(--spacing4);
+        background: var(--background);
+    }
+    .grid >*:first-child, .reverse > *:first-child {
+        order: 1; /* Keep the first child in the first position */
+        margin: var(--spacing4) 0;
     }
     .logo{
         font: var(--h3);
