@@ -57,9 +57,9 @@ class TTeamBox extends HTMLElement{
        
 
         this.innerHTML=`
-        <div class="img">
+        <div class="img justify-top">
             <img src="${imageUrl}" class="border-radius-2 s-300px">
-            <div class="column center">
+            <div class=" center">
                 <h2>${name}</h2>
                 <p>${role}</p>
                 <div class="social-media-icons flex">
