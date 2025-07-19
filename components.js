@@ -36,7 +36,25 @@ class TBox extends HTMLElement{
 }
 customElements.define("t-box", TBox);
 
+class TSection2 extends HTMLElement{
+    connectedCallback(){
+        const selector = this.getAttribute("selector");
+        const heading = this.getAttribute("heading");
+        const paragraph = this.getAttribute("paragraph");
+        const paragraph2 = this.getAttribute("paragraph2");
 
+
+        this.innerHTML = `
+        <section class="${selector}">
+            <h1>${heading}</h1>
+            <p>${paragraph}</p>
+            <p>${paragraph2}</p>
+            <slot></slot>
+        </section>
+        `;
+    }
+}
+customElements.define("t-section-2", TSection2);
 class TTeamBox extends HTMLElement{
     connectedCallback(){
         const imageUrl = this.getAttribute("imageUrl");

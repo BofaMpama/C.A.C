@@ -247,6 +247,15 @@ flex > *, .grid > *{
 .margin7{
     margin: var(--spacing7) auto;
 }
+
+/*unique margin classes*/
+.margin-8{
+    margin-top: var(--spacing6);
+}
+.margin9{
+    margin: var(--spacing3) auto var(--spacing6) auto;
+}
+
 .background2{
     background: var(--color2);
     max-width: 80%;
