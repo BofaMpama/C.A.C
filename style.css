@@ -515,7 +515,7 @@ footer{
         width: var(--size1);
     }
     .card-design1{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         height: fit-content;
         padding: var(--spacing3);
