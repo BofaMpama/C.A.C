@@ -95,7 +95,6 @@ img{
     height: fit-content;
 }
 .card-image{
-   
     height: 300px;
     width: 300px;
     object-fit: contain;
@@ -122,6 +121,23 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*card-designs*/
+.card-design1{
+  
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: var(--spacing6);
+        background: var(--colorDefault2);
+        padding: var(--spacing4);
+        gap: var(--spacing4);
+        border-radius: var(--spacing2);
+
+
 }
 
 /*Utility classes*/
@@ -298,6 +314,18 @@ clip-path: polygon(50% 0%, 60% 15%, 100% 25%, 90% 50%,
 .w-400px{
     width: 400px;
 }
+/*height classes*/
+.h-200px{
+    height: 200px;
+    max-height: min-content;
+}
+.h-300px{
+    height: 300px;
+    max-height: min-content;
+}
+.h-400px{
+    height: 400px;
+}
 
 /*size classes*/
 .s-100px{
@@ -312,7 +340,23 @@ clip-path: polygon(50% 0%, 60% 15%, 100% 25%, 90% 50%,
     width: 300px;
     height: 350px;
 }
-
+/*icon size*/
+.i-50px{
+    width: 50px;
+    height: 50px;
+}
+.i-100px{
+    width: 100px;
+    height: 100px;
+}
+.i-200px{
+    width: 200px;
+    height: 200px;
+}
+.i-300px{
+    width: 300px;
+    height: 300px;
+}
 
 /* header */
 header{

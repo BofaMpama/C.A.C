@@ -17,14 +17,14 @@ customElements.define("t-flex-container", TFlexContainer);
 class TBox extends HTMLElement{
     connectedCallback(){
         const selector = this.getAttribute("selector");
-        const iconPath = this.getAttribute("icon-path");
+        const iconPath = this.getAttribute("iconPath");
         const iconStyle = this.getAttribute("icon-style");
         const boxDetails = this.getAttribute("box-details");
         const heading = this.getAttribute("heading");
         const paragraph = this.getAttribute("paragraph");
 
         this.innerHTML = `
-        <div class="${selector}">
+        <div class="w-300px flex2 ${selector}}">   
             <img src="${iconPath}" class="${iconStyle}">
             <div class="${boxDetails}">
                 <h2>${heading}</h2>
@@ -109,4 +109,38 @@ fetch('team.json')
         });
     });
 
+
+class TValueBox extends HTMLElement{
+    connectedCallback(){
+        const selector = this.getAttribute("selector");
+        const iconPath = this.getAttribute("iconPath");
+        const iconStyle = this.getAttribute("icon-style");
+        const boxDetails = this.getAttribute("box-details");
+        const heading = this.getAttribute("heading");
+        const paragraph = this.getAttribute("paragraph");
+
+        this.innerHTML = `
+            <div class="card-design1 w-400px h-400px center">
+            <img src="${iconPath}" class="i-100px">
+            <div class="${boxDetails}">
+                <h2>${heading}</h2>
+                <p>${paragraph  }</p>
+            </div>
+        </div>
+        `;
+    }
+}       
+customElements.define("t-value-box", TValueBox);
+
+fetch('values.json')    
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(value => {
+            const item = document.createElement("t-value-box");
+            item.setAttribute('iconPath', value.iconPath);
+            item.setAttribute('heading', value.heading);
+            item.setAttribute('paragraph', value.paragraph);
+            document.getElementById('t-values-section').appendChild(item);
+        });
+    });    
 
