@@ -117,7 +117,7 @@ class TValueBox extends HTMLElement{
         const paragraph = this.getAttribute("paragraph");
 
         this.innerHTML = `
-            <div class="card-design1 center">
+            <div class="card-design1 center" style="height: 350px;">
             <img src="${iconPath}" class="i-100px">
             <div class="${boxDetails}">
                 <h2>${heading}</h2>
