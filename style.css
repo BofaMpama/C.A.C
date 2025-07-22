@@ -125,8 +125,6 @@ img{
 
 /*card-designs*/
 .card-design1{
-  
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -135,7 +133,7 @@ img{
         background: var(--colorDefault2);
         padding: var(--spacing4);
         gap: var(--spacing4);
-        border-radius: var(--spacing2);
+        border-radius: 25px;
 
 
 }
@@ -170,6 +168,13 @@ section{
     justify-content: space-between;
     gap: var(--spacing3);
 }
+.flex3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing5);
+}
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 equal columns */
@@ -196,6 +201,19 @@ section{
     display: flex;
     max-width: 90%;
     flex-direction: column;
+}
+.column2{
+    width: min(1000px, 100%);
+    margin: 0 auto;
+    height: fit-content;
+    columns: 4 300px;
+    column-gap: 3em;
+}
+.column2 >*{
+    height: fit-content;
+    display: block;
+    height: fit-content;
+    margin-bottom: var(--spacing5);
 }
 flex > *, .grid > *{
     flex: 1;
@@ -265,8 +283,8 @@ flex > *, .grid > *{
 }
 
 /*unique margin classes*/
-.margin-8{
-    margin-top: var(--spacing6);
+.margin8{
+    margin-top: var(--spacing7);
 }
 .margin9{
     margin: var(--spacing3) auto var(--spacing6) auto;
@@ -278,6 +296,9 @@ flex > *, .grid > *{
 }
 .color2{
     color: var(--background);
+}
+.border-radius{
+    border-radius: 20px;
 }
 .border-radius-1{
     border-radius: 100%;

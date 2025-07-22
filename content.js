@@ -9,8 +9,8 @@ class THeader extends HTMLElement{
             <a href="index.html">Home</a>
             <a href="about-us.html">About</a>
             <a href="#">Stories</a>
-            <a href="#">Enquiries</a>
-            <a href="#">Connect With Us</a>
+            <a href="enquiries.html">Enquiries</a>  
+            <a href="#">Connect With Us</a> 
             <a href="#" class="btn">Donate</a>
         </nav>
     </header>
@@ -37,8 +37,8 @@ class TSection extends HTMLElement{
         this.innerHTML =`
         <section class="${selector}">
         <div class="primary">
-            <p class="bold">${boldParagraph}</p>
-            <h2>${heading}</h2>
+            <p class="bold" style="color: var(--color2)">${boldParagraph}</p>
+            <h1>${heading}</h1>
             <p>${paragraph}</p>
             <p>${paragraph2}</p>
             <button class="${addedStyling}"><a href="${link}" class"btn">${linkText}</a></button>
@@ -86,7 +86,7 @@ class TFooter extends HTMLElement{
                     <a href="index.html">Home</a>
                     <a href="about-us.html">About</a>
                     <a href="#">Stories</a>
-                    <a href="#">Enquiries</a>
+                    <a href="enquiries.html">Enquiries</a>
                     <a href="#">Connect With Us</a>
                     <a href="#">Donate</a>
                 </ul>
