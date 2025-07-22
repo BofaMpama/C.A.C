@@ -32,6 +32,8 @@
     --spacing7: 160px;
     --size1: 40px;
     --flex: flex;
+    --box-shadow1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --box-shadow2: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /*Global Styles*/
@@ -316,6 +318,14 @@ clip-path: polygon(50% 0%, 60% 15%, 100% 25%, 90% 50%,
 
 }
 
+/*box-shadow classes*/
+.box-shadow1{
+    box-shadow: var(--box-shadow1);
+}
+.box-shadow2{
+    box-shadow: var(--box-shadow2);
+}
+
 /*width classes*/
 .w-90{
     max-width: 90%;
@@ -519,6 +529,9 @@ footer{
     }
     img{
         max-width: 100%;
+    }
+    h1{
+        font: var(--h2);
     }
     .t-text-only-section{
         max-width: 50%;
