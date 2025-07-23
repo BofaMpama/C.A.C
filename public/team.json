@@ -1,6 +1,6 @@
 [
     {
-    "imageUrl": "resources/team-photos/boff.png", 
+    "imageUrl": "./resources/team-photos/boff.png", 
     "name": "Bofa Mpama ", 
     "role": "Founder", 
     "facebookUrl": "https://www.facebook.com/bofampama", 
@@ -9,7 +9,7 @@
     "githubUrl": "https://www.github.com/BofaMpama"
     },
     {
-    "imageUrl": "resources/team-photos/tobi.jpeg", 
+    "imageUrl": "./resources/team-photos/tobi.jpeg", 
     "name": "Tobi Olajuwon ", 
     "role": "Executive Director", 
     "facebookUrl": "https://www.facebook.com/tobiolajuwon", 
@@ -18,7 +18,7 @@
     "githubUrl": "https://www.github.com/tobiolajuwon"
     },
     {
-    "imageUrl": "resources/team-photos/esther.jpeg", 
+    "imageUrl": "./resources/team-photos/esther.jpeg", 
     "name": "Esther Bassey ", 
     "role": "Executive Director", 
     "facebookUrl": "https://www.facebook.com/estherbassey", 
@@ -27,7 +27,7 @@
     "githubUrl": "https://www.github.com/estherbassey"
     },
     {
-    "imageUrl": "resources/team-photos/benedicta.jpeg", 
+    "imageUrl": "./resources/team-photos/benedicta.jpeg", 
     "name": "Benedicta Ogunbiyi ", 
     "role": "Director of Ministry & Discipleship", 
     "facebookUrl": "https://www.facebook.com/benedictaogunbiyi", 
@@ -36,7 +36,7 @@
     "githubUrl": "https://www.github.com/benedictaogunbiyi"
     },
     {
-    "imageUrl": "resources/team-photos/joe.jpeg", 
+    "imageUrl": "./resources/team-photos/joe.jpeg", 
     "name": "Joe Emmanuel ", 
     "role": "CTO (Chief Technology Officer)", 
     "facebookUrl": "https://www.facebook.com/joe.emmanuel", 
@@ -45,7 +45,7 @@
     "githubUrl": "https://www.github.com/joeemma"
     },
     {
-    "imageUrl": "resources/team-photos/praise.jpeg", 
+    "imageUrl": "./resources/team-photos/praise.jpeg", 
     "name": "Praise Godfrey", 
     "role": "Product/Program Manager ", 
     "facebookUrl": "https://www.facebook.com/praisegodfrey", 
@@ -54,7 +54,7 @@
     "githubUrl": "https://www.github.com/praisegodfrey"
     },
     {
-    "imageUrl": "resources/team-photos/sam.jpeg", 
+    "imageUrl": "./resources/team-photos/sam.jpeg", 
     "name": "Sam Ojo", 
     "role": "Communications & Media Lead", 
     "facebookUrl": "https://www.facebook.com/Samojo", 
@@ -63,7 +63,7 @@
     "githubUrl": "https://www.github.com/samojo"
     },
     {
-    "imageUrl": "resources/team-photos/mirabel.jpeg", 
+    "imageUrl": "./resources/team-photos/mirabel.jpeg", 
     "name": "Mirabel Kingsley", 
     "role": "Partnerships & Outreach Coordinator", 
     "facebookUrl": "https://www.facebook.com/mirabel king", 
@@ -72,7 +72,7 @@
     "githubUrl": "https://www.github.com/mirabelkingsley"
     },
     {
-    "imageUrl": "resources/team-photos/benaiah.jpeg", 
+    "imageUrl": "./resources/team-photos/benaiah.jpeg", 
     "name": "Benaiah Johnson", 
     "role": "Fundraising / Development Officer", 
     "facebookUrl": "https://www.facebook.com/ben.johnson", 

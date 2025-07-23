@@ -4,7 +4,7 @@ class THeader extends HTMLElement{
     this.innerHTML =`
     <header>
     <div class="logo">Christ & Code</div>
-    <img src="resources/icons/icons8-menu-squared-100.png" class="hamburger">
+    <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
     <nav>
             <a href="index.html">Home</a>
             <a href="about-us.html">About</a>
@@ -102,10 +102,10 @@ class TFooter extends HTMLElement{
                     <h3>Follow Us</h3>
                 </div>    
                 <div class="social-media-icons">
-                    <img src="resources/icons/icons8-facebook-64.png"/>                    
-                    <img src="resources/icons/icons8-instagram-64.png"/>
-                    <img src="resources/icons/icons8-linkedin-64.png"/>
-                    <img src="resources/icons/icons8-x-64.png"/>
+                    <img src="./resources/icons/icons8-facebook-64.png"/>                    
+                    <img src="./resources/icons/icons8-instagram-64.png"/>
+                    <img src="./resources/icons/icons8-linkedin-64.png"/>
+                    <img src="./resources/icons/icons8-x-64.png"/>
                 </div>
             </div>
             <div class="copyright-text">

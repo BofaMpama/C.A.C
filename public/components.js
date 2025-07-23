@@ -65,10 +65,10 @@ class TTeamBox extends HTMLElement{
         const githubUrl = this.getAttribute("githubUrl") || "#";
 
         // Static icon paths
-        const facebookIcon = "resources/icons/icons8-facebook-64.png";
-        const twitterIcon = "resources/icons/icons8-x-64.png";
-        const linkedinIcon = "resources/icons/icons8-linkedin-64.png";
-        const githubIcon = "resources/icons/icons8-github-64.png";
+        const facebookIcon = "./resources/icons/icons8-facebook-64.png";
+        const twitterIcon = "./resources/icons/icons8-x-64.png";
+        const linkedinIcon = "./resources/icons/icons8-linkedin-64.png";
+        const githubIcon = "./resources/icons/icons8-github-64.png";
        
 
         this.innerHTML=`
