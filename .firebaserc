@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "christ-and-code"
-  }
+    "default": "christncode",
+    "christncode": "christncode"
+  },
+  "targets": {},
+  "etags": {}
 }
