@@ -3,9 +3,9 @@ class THeader extends HTMLElement{
  connectedCallback(){
     this.innerHTML =`
     <header>
-    <div class="logo">Christ & Code</div>
-    <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
-    <nav>
+        <div class="logo">Christ & Code</div>
+        <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
+        <nav>
             <a href="index.html">Home</a>
             <a href="about-us.html">About</a>
             <a href="#">Stories</a>
@@ -13,6 +13,11 @@ class THeader extends HTMLElement{
             <a href="#">Connect With Us</a> 
             <a href="#" class="btn">Donate</a>
         </nav>
+        <div class="auth-buttons">
+            <button class="auth-btn" id="signin-btn">Sign In</button>
+            <button class="auth-btn" id="signup-btn">Sign Up</button>
+            <button class="auth-btn hidden" id="logout-btn">Log Out</button>
+        </div>
     </header>
     `;
  }
