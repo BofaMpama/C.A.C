@@ -42,7 +42,6 @@ html{
 }
 
 body{
-    text-wrap: balance;
     font: var(--p);
     font-family: var(--generalFont);
     background: var(--background);
@@ -52,7 +51,8 @@ body{
     font: var(--h2);
     font-family: var(--generalFont);
     color: var(--color2);
-    min-width: fit-content;
+    min-width: max-content;
+    margin-left: 20px;
 }
 h1{
     font: var(--h1);
@@ -123,6 +123,10 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.mobile-show{
+    display: none;
+    height: 0;    
 }
 
 /*card-designs*/
@@ -391,25 +395,34 @@ clip-path: polygon(50% 0%, 60% 15%, 100% 25%, 90% 50%,
 
 /* header */
 header{
-    width: 90%;
-    max-width: 1080px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: var(--spacing4) 0;
+    justify-content: flex-start;
+    top: 0;
+    position: fixed;
+    padding: 10px 20px  10px 0px;
+    background: var(--colorDefault2);
+}
+.nav-links, .auth-buttons{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing3);
 }
 nav {
     display: flex;
     align-items: center;
     gap: var(--spacing5);
+    padding: var(--spacing3) var(--spacing4);
+    max-width: 100%;
 }
 nav a{
     color:var(--color2);
 }
 nav a:hover{
-    color: var(--colorDefault2);
+    color: var(--color3);
 }
 .hamburger{
     display: none;
@@ -417,7 +430,13 @@ nav a:hover{
     height: 40px;
     border-radius: 10px;
 }
-
+nav.left-nav{
+    margin-left: auto !important;
+    gap: var(--spacing3);
+}
+.left-nav:nth-of-type(2){
+    margin-left: 0;
+}
 
 /*footer*/
 footer{
@@ -432,7 +451,6 @@ footer{
 
     .logo{
         color: var(--colorDefault2);
-
     }
     h3{
         line-height: 50px;
@@ -477,12 +495,53 @@ footer{
     }
 }
 .copyright-text{
-    min-width: fit-content;
+    min-width: max-content;
     width: 100%;
 }
 
-/*Tablet and Mobile Styles*/
-@media (max-width: 900px){
+/*Mini-laptop size*/
+@media (max-width: 1100px) {
+     header{
+        align-items: center;
+
+
+       
+        
+        
+    }
+     .hamburger{
+            order: 2;
+            margin-left: auto;
+        }
+        .donate-button{
+            margin-left: auto;
+            }
+            .nav-links, .auth-buttons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: var(--spacing3);
+            }
+            #login-btn, #signup-btn{
+                border: 2px solid var(--color2);
+                width: 300px;
+                text-align: center;
+                padding: var(--spacing2) var(--spacing3);
+                border-radius: var(--spacing2);
+            }
+            #signup-btn{
+                color: var(--colorDefault2);
+                background: var(--color2);
+            }
+            .spacer{
+                flex-grow: 1;
+            }
+            .donate-container{
+                order: 1;
+                margin-right: 10px;
+            }
+
+
     .mobile-size-1{
         width: 100%;
         max-width: 100%;
@@ -509,6 +568,7 @@ footer{
     nav{
         display: none;
 
+
         a:hover{
             color: var(--color1);
         }
@@ -524,9 +584,28 @@ footer{
         gap: var(--spacing4);
         border-radius: var(--spacing2);
     }
+    .nav.left-nav{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing3);
+    }
     .logo{
         width: 100px;
     }
+    .mobile-hide{
+        display: none;
+        height: 0;
+    }
+    .mobile-show{
+        display: block;
+        height: fit-content;
+    }
+}
+
+/*Tablet and Mobile Styles*/
+@media (max-width: 900px){
+   
     .flex{
         flex-wrap: wrap;
         flex-grow: 1;
@@ -564,6 +643,9 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        .logo{
+            margin-left: 0;
+        }
     }
     .footer-right{
         display: flex;

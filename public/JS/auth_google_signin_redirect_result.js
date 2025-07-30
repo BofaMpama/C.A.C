@@ -1,4 +1,6 @@
 import { getAuth, getRedirectResult, GoogleAuthProvider } from "firebase/auth";
+import { getAuth } from "./auth_main_code.js";
+
 
 const auth = getAuth();
 getRedirectResult(auth)

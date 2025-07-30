@@ -2,22 +2,36 @@
 class THeader extends HTMLElement{
  connectedCallback(){
     this.innerHTML =`
+    
     <header>
-        <div class="logo">Christ & Code</div>
-        <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
+    <div class="logo">Christ & Code</div>
+    <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
         <nav>
+            <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about-us.html">About</a>
             <a href="#">Stories</a>
             <a href="enquiries.html">Enquiries</a>  
             <a href="#">Connect With Us</a> 
-            <a href="#" class="btn">Donate</a>
+            </div>
+            <div class="auth-buttons">
+            <a id="login-btn" class="mobile-show right left-nav">Login</a>
+            <a id="signup-btn" class="mobile-show right left-nav">Sign Up</a> 
+            </div>
         </nav>
-        <div class="auth-buttons">
-            <button class="auth-btn" id="signin-btn">Sign In</button>
-            <button class="auth-btn" id="signup-btn">Sign Up</button>
-            <button class="auth-btn hidden" id="logout-btn">Log Out</button>
-        </div>
+            
+        </nav>
+        <nav class="left-nav auth-nav">
+         <a id="login-btn" class="mobile-hide right left-nav">Login</a>
+            <a id="signup-btn" class="mobile-hide right left-nav">Sign Up</a> 
+            <a id="logout-btn" class="mobile-hide right left-nav hidden">Logout</a>
+
+        </nav>
+       </div>
+       <div class="spacer"></div>
+       <div class="donate-container">
+        <a href="donate.html" class="donate-button btn">Donate</a>
+         </div> 
     </header>
     `;
  }
