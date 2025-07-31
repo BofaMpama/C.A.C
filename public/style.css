@@ -570,7 +570,7 @@ footer{
         gap: var(--spacing5);
     }
     .logo{
-        font: var(--h3);
+        font: var(--h2);
     }
     .hamburger{
         display: block;
