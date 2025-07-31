@@ -596,9 +596,6 @@ footer{
         align-items: center;
         gap: var(--spacing3);
     }
-    .logo{
-        width: 100px;
-    }
     .mobile-hide{
         display: none;
         height: 0;
@@ -666,10 +663,6 @@ footer{
     header{
         max-width: 100%;
     }
-   .logo{
-        font-size: var(--h2);
-        width: fit-content;
-   }
    .spacer{
         flex-grow: 1;
    }
