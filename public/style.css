@@ -657,13 +657,3 @@ footer{
         text-align: center;
     }
 }
-
-/*Mobile Styles for About Us Page*/
-@media (max-width: 600px){
-    header{
-        max-width: 100%;
-    }
-   .spacer{
-        flex-grow: 1;
-   }
-}
