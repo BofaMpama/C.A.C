@@ -657,3 +657,16 @@ footer{
         text-align: center;
     }
 }
+
+/*Mobile Styles for Smaller Screens*/
+@media (max-width: 600px){
+    header{
+        max-width: 100%;
+    }
+   .logo{
+        font-size: var(--h3);
+   }
+   .spacer{
+        flex-grow: 0;
+   }
+}
