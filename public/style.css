@@ -658,7 +658,10 @@ footer{
 /*Mobile Styles for About Us Page*/
 @media (max-width: 600px){
    .logo{
-        font-size: var(--h3);
+        font-size: var(--h4);
         width: fit-content;
+   }
+   .spacer{
+        flex-grow: 0;
    }
 }
