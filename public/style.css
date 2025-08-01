@@ -670,3 +670,9 @@ footer{
         flex-grow: 1;
    }
 }
+
+@media (max-width: 400px){
+  header{
+    
+  }  
+}

@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christ & Code</title>
     <link rel="stylesheet" href="style.css">
-       <script src="content.js" defer></script>
-    <script src="components.js" defer></script>
-    <script src="script.js" defer></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"
+    integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw=="
+    crossorigin="anonymous"></script>
 
 
-<script type="module" src="JS/auth_main_code.js"></script>
+
+    
+
+
+<!-- <script type="module" src="JS/auth_main_code.js"></script>
 <script type="module" src="JS/auth_google_provider_create.js"></script>
 <script type="module" src="JS/auth_google_provider_params.js"></script>
 <script type="module" src="JS/auth_google_provider_scopes.js"></script>
@@ -19,7 +25,7 @@
 <script type="module" src="JS/auth_set_language_code.js"></script>
 <script type="module" src="JS/auth_signin_redirect.js"></script>
 <script type="module" src="JS/auth_state_listener.js"></script>
-<script type="module" src="JS/auth_sign_out.js"></script>
+<script type="module" src="JS/auth_sign_out.js"></script> -->
 
 
 
@@ -90,5 +96,51 @@
     <script src="content.js"></script>
     <script src="components.js"></script>
     <script src="script.js"></script>
+    <script type="module" src="JS/app.js"></script>
+    
+     <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js'
+
+    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js'
+
+    // Add Firebase products that you want to use
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js'
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js'
+  </script>
+  <script type="module" src="">
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import {GoogleAuthProvider } from "firebase/auth";
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB0_uWdbiRt1elh_fjcDl3FBX8Fwg26C-8",
+  authDomain: "christncode.firebaseapp.com",
+  projectId: "christncode",
+  storageBucket: "christncode.firebasestorage.app",
+  messagingSenderId: "688445074434",
+  appId: "1:688445074434:web:7ac38982238a9322b74b1b",
+  measurementId: "G-HQLCSMR9CT"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+export const auth = getAuth(app);
+export const provider = new GoogleAuthProvider();
+
+
+
+
+
+  </script>
+
 </body>
 </html>

@@ -14,3 +14,11 @@ function toggle(){
     const menu = document.getElementById('mobileMenu');
     menu.classList.toggle('hidden');
   });
+
+  function setGoogle() {
+    try {
+      signInWithPopup(auth, provider);
+    } catch (error) {
+      console.error("Error setting Google authentication:", error);
+    }
+  }
