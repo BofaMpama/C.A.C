@@ -22,3 +22,23 @@ For CI servers and headless environments, generate a new token with firebase log
 [debug] [2025-07-31T22:17:33.717Z] 'fdc build' failed with error: Failed to make request to https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.10.1 {"metadata":{"emulator":{"name":"dataconnect"},"message":"'fdc build' failed with error: Failed to make request to https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.10.1"}}
 [warn] !  Setup required, please run: firebase setup:emulators:dataconnect 
 [info] [Firebase Plugin] Stopping Data Connect toolkit
+[debug] [2025-08-01T21:34:10.484Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-08-01T21:35:27.002Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-08-01T21:35:27.978Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-01T21:35:27.987Z] > authorizing via signed-in user (mpamabofa@gmail.com)
+[debug] [2025-08-01T21:35:28.019Z] Checked if tokens are valid: false, expires at: 1753916755360
+[debug] [2025-08-01T21:35:28.023Z] Checked if tokens are valid: false, expires at: 1753916755360
+[debug] [2025-08-01T21:35:28.029Z] > refreshing access token with scopes: []
+[debug] [2025-08-01T21:35:28.044Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-01T21:35:28.053Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.10.1) on port 50001
+[info] i  dataconnect: downloading dataconnect-emulator-2.10.1.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.10.1.exe..."}}
+[debug] [2025-08-01T21:35:39.367Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.10.1 
+[debug] [2025-08-01T21:35:41.344Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-08-01T21:35:41.345Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-01T21:36:27.291Z] [Firebase Plugin] User found:  mpamabofa@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-08-01T21:36:27.305Z] Checked if tokens are valid: true, expires at: 1754087740354
+[debug] [2025-08-01T21:36:27.309Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-08-01T21:36:44.815Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.10.1 200
+[debug] [2025-08-01T21:36:44.816Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.10.1 [stream]
