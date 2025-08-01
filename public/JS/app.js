@@ -40,7 +40,7 @@ class THeader extends HTMLElement{
             </section>
             <section id="whenSignedIn" hidden="true">
             <div id="userDetails"></div>
-            <a id="signOutBtn" class="btn btn-primary mobile-show left-nav>Sign Out</a>
+            <a id="signOutBtn" class="btn btn-primary mobile-show left-nav">Sign Out</a>
             </section>
             </div>
         </nav>
@@ -67,13 +67,13 @@ class THeader extends HTMLElement{
     provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 
 
-    const whenSignedIn = document.querySelector("#whenSignedIn");
-    const whenSignedOut = document.querySelector("#whenSignedOut");
+    const whenSignedIn = this.querySelector("#whenSignedIn");
+    const whenSignedOut = this.querySelector("#whenSignedOut");
 
-    const signInBtn = document.querySelector("#signInBtn");
-    const signOutBtn = document.querySelector("#signOutBtn");
+    const signInBtn = this.querySelector("#signInBtn");
+    const signOutBtn = this.querySelector("#signOutBtn");
 
-    const userDetails = document.querySelector("#userDetails");
+    const userDetails = this.querySelector("#userDetails");
 
 
 
