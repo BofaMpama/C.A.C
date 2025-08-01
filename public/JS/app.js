@@ -67,26 +67,29 @@ class THeader extends HTMLElement{
     provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 
 
-    const whenSignedIn = document.getElementById("whenSignedIn");
-    const whenSignedOut = document.getElementById("whenSignedOut");
+    const whenSignedIn = document.querySelector("#whenSignedIn");
+    const whenSignedOut = document.querySelector("#whenSignedOut");
 
-    const signInBtn = document.getElementById("signInBtn");
-    const signOutBtn = document.getElementById("signOutBtn");
+    const signInBtn = document.querySelector("#signInBtn");
+    const signOutBtn = document.querySelector("#signOutBtn");
 
-    const userDetails = document.getElementById("userDetails");
+    const userDetails = document.querySelector("#userDetails");
 
 
 
     //Sign In Event Handler
-    signInBtn.onclick = () => firebase.auth().signInWithPopup(provider);
-    signOutBtn.onclick = () => firebase.auth().signOut()
-        .then(function () {
-            // Sign-out successful.
-        }).catch(function (error) {
-            // An error happened.
-        });  
+    if (signInBtn) {
+        signInBtn.onclick = () => signInWithPopup(auth, provider).catch((error) => {console.error("Error during sign-in:", error);});
+    }
 
-    firebase.auth().onAuthStateChanged(function (user) {
+
+    //Sign Out Event Handler
+    if (signOutBtn){
+        signOutBtn.onclick = () => signOut(auth).catch((error) => {console.error("Error during sign-out:", error);});
+    }
+
+
+    onAuthStateChanged(auth, (user) => {
         if (user) {
             // User is signed in.
             whenSignedIn.hidden = false;
