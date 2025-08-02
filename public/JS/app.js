@@ -1,20 +1,3 @@
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
-import { initializeApp } from "firebase/app";
-
-//Firebase Config
-const firebaseConfig = {
-  apiKey: "AIzaSyB0_uWdbiRt1elh_fjcDl3FBX8Fwg26C-8",
-  authDomain: "christncode.firebaseapp.com",
-  projectId: "christncode",
-  storageBucket: "christncode.firebasestorage.app",
-  messagingSenderId: "688445074434",
-  appId: "1:688445074434:web:7ac38982238a9322b74b1b",
-  measurementId: "G-HQLCSMR9CT"
-};
-
-//Initializing Firebase app
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
 
 
 
@@ -25,7 +8,6 @@ class THeader extends HTMLElement{
     
     <header>
     <div class="logo">Christ & Code</div>
-    <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
         <nav>
             <div class="nav-links">
             <a href="index.html">Home</a>
@@ -45,7 +27,6 @@ class THeader extends HTMLElement{
             </div>
         </nav>
             
-        </nav>
         <nav class="left-nav auth-nav">
             <a id="login-btn" class="mobile-hide right left-nav">Login</a>
             <a id="signup-btn" class="mobile-hide right left-nav">Sign Up</a> 
@@ -55,8 +36,10 @@ class THeader extends HTMLElement{
        </div>
        <div class="spacer"></div>
        <div class="donate-container">
-        <a href="donate.html" class="donate-button btn">Donate</a>
-         </div> 
+            <a href="donate.html" class="donate-button btn">Donate</a>
+        </div> 
+        <img src="./resources/icons/icons8-menu-squared-100.png" class="hamburger">
+ 
     </header>
     `;
      this.setupAuthHandlers();

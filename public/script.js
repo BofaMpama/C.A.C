@@ -1,5 +1,5 @@
-const ham = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
+const ham = this.querySelector(".hamburger");
+const nav = this.querySelector("nav");
 ham.addEventListener("click", toggle);
 nav.addEventListener("click", toggle);
 authBtns.addEventListener("click", toggle);
@@ -9,16 +9,8 @@ function toggle(){
       : "resources/icons/icons8-menu-squared-100.png";
     nav.classList.toggle("show");
 }
-
   document.getElementById('menuBtn').addEventListener('click', () => {
     const menu = document.getElementById('mobileMenu');
     menu.classList.toggle('hidden');
   });
 
-  function setGoogle() {
-    try {
-      signInWithPopup(auth, provider);
-    } catch (error) {
-      console.error("Error setting Google authentication:", error);
-    }
-  }

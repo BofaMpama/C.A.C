@@ -1,4 +1,7 @@
 
+
+
+
 //section
 class TSection extends HTMLElement{
     connectedCallback(){
@@ -88,8 +91,8 @@ class TFooter extends HTMLElement{
                     <img src="./resources/icons/icons8-x-64.png"/>
                 </div>
             </div>
-            <div class="copyright-text">
-                <p>&copy; Copyright Christ & Code 2024. All Rights Reserved.
+            <div class="copyright-text w-90">
+                <p>&copy; Copyright Christ & Code 2024. All Rights Reserved.</p>
             </div>
             </footer>
         `;
