@@ -27,6 +27,7 @@
     --spacing2: 8px;
     --spacing3: 16px;
     --spacing4: 20px;
+    --spacing4point5: 25px;
     --spacing5: 40px;
     --spacing6: 80px;
     --spacing7: 160px;
@@ -663,15 +664,15 @@ footer{
 
 /*Mobile Styles for Smaller Screens*/
 @media (max-width: 600px){
+    .logo{
+        font-size: var(--spacing4point5);
+    }
     .img-center{
         width: 100%;
     }
     header{
         max-width: 100%;
-    }
-   .logo{
-        font-size: var(--h1);
-   }
+    }   
    .spacer{
         flex-grow: 1;
    }
