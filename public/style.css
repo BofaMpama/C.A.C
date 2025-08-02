@@ -435,6 +435,15 @@ nav a{
 nav a:hover{
     color: var(--color3);
 }
+#signInBtn{
+    display: inline-block;
+    flex-grow: 1;
+    min-width: max-content;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-right: var(--spacing4);
+
+}
 .hamburger{
     display: none;
     width: 40px;
@@ -443,7 +452,7 @@ nav a:hover{
 }
 nav.left-nav{
     margin-left: auto !important;
-    gap: var(--spacing3);
+    gap: var(--spacing4);
 }
 .left-nav:nth-of-type(2){
     margin-left: 0;
@@ -542,6 +551,7 @@ footer{
             #signup-btn{
                 color: var(--colorDefault2);
                 background: var(--color2);
+                margin-right: 0;
             }
             .spacer{
                 flex-grow: 1;

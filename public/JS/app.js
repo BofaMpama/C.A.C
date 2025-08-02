@@ -7,7 +7,7 @@ class THeader extends HTMLElement{
     this.innerHTML =`
     
     <header>
-    <div class="logo">Christ & Code</div>
+        <div class="logo">Christ & Code</div>
         <nav>
             <div class="nav-links">
             <a href="index.html">Home</a>
@@ -16,22 +16,19 @@ class THeader extends HTMLElement{
             <a href="enquiries.html">Enquiries</a>  
             <a href="#">Connect With Us</a> 
             </div>
-            <div class="auth-buttons">
-            <section id="whenSignedOut">
-            <a id="signInBtn" class="btn btn-primary mobile-show left-nav">Sign in with Google</a>
-            </section>
-            <section id="whenSignedIn" hidden="true">
-            <div id="userDetails"></div>
-            <a id="signOutBtn" class="btn btn-primary mobile-show left-nav">Sign Out</a>
-            </section>
-            </div>
+            
         </nav>
             
         <nav class="left-nav auth-nav">
-            <a id="login-btn" class="mobile-hide right left-nav">Login</a>
-            <a id="signup-btn" class="mobile-hide right left-nav">Sign Up</a> 
-            <a id="logout-btn" class="mobile-hide right left-nav hidden">Logout</a>
-
+            <div class="auth-buttons">
+            <section id="whenSignedOut">
+            <a id="signInBtn" class="left-nav" href="#">Sign in with Google</a>
+            </section>
+            <section id="whenSignedIn" hidden="true">
+            <div id="userDetails"></div>
+            <a id="signOutBtn" class="btn btn-primary left-nav" href="#">Sign Out</a>
+            </section>
+            </div>
         </nav>
        </div>
        <div class="spacer"></div>
@@ -43,6 +40,25 @@ class THeader extends HTMLElement{
     </header>
     `;
      this.setupAuthHandlers();
+
+     const ham = this.querySelector(".hamburger");
+const nav = this.querySelector("nav");
+const authBtns = this.querySelector(".auth-buttons");
+ham.addEventListener("click", toggle);
+nav.addEventListener("click", toggle);
+authBtns.addEventListener("click", toggle);
+function toggle(){
+    ham.src = ham.src.includes("resources/icons/icons8-close-100.png") 
+      ? "resources/icons/icons8-close-100.png" 
+      : "resources/icons/icons8-menu-squared-100.png";
+    nav.classList.toggle("show");
+}
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  });
+
+
  }
 
  setupAuthHandlers(){
